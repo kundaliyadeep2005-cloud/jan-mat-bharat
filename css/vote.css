@@ -1,0 +1,264 @@
+/* ===== VOTE HERO ===== */
+.vote-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.vote-hero h1 {
+    font-size: 3rem;
+    color: #0A3D62;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.vote-hero p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #444;
+}
+
+/* ===== SECTIONS ===== */
+.vote-section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ===== STATUS CARD ===== */
+.status-card {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 30px;
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #138808;
+    border-radius: 8px;
+    color: #0A3D62;
+}
+
+.status-card span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.status-card span::before {
+    content: '✔';
+    color: #138808;
+    font-weight: bold;
+}
+
+/* ===== PARTY GRID ===== */
+/* This is Flexbox again for responsiveness */
+.party-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wraps items to new line on mobile */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* ===== VOTE CARD ===== */
+.vote-card {
+    flex: 1 1 260px;
+    /* Grow to fill space, but min width 260px */
+    max-width: 320px;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px solid #eee;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.vote-card:hover {
+    border-color: #138808;
+    background-color: #f9fff9;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(19, 136, 8, 0.15);
+}
+
+.vote-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+}
+
+.vote-card h3 {
+    color: #0A3D62;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.tag {
+    font-size: 0.9rem;
+    color: #666;
+    background: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* ===== SELECTED STATE ===== */
+.vote-card.selected {
+    border-color: #138808;
+    border-width: 3px;
+    background: linear-gradient(135deg, #f0fff4 0%, #e8f5e9 100%);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(19, 136, 8, 0.25);
+}
+
+.vote-card.selected::after {
+    content: '✓';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #138808;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(19, 136, 8, 0.4);
+    animation: checkmarkPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes checkmarkPop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ===== NOTA (None of the Above) ===== */
+.vote-card.nota {
+    border: 2px dashed #ccc;
+    background: #fafafa;
+}
+
+.vote-card.nota:hover {
+    border-color: #FF9933;
+    background: #fff;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(255, 153, 51, 0.15);
+}
+
+.vote-card.nota.selected {
+    border-color: #FF9933;
+    border-width: 3px;
+    border-style: solid;
+    background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 100%);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(255, 153, 51, 0.25);
+}
+
+.vote-card.nota.selected::after {
+    background: #FF9933;
+    box-shadow: 0 2px 8px rgba(255, 153, 51, 0.4);
+}
+
+/* ===== CONFIRM BOX ===== */
+.confirm-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.confirm-box h3 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+#selectedParty {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #138808;
+    margin: 10px 0 20px;
+}
+
+.warning {
+    color: #c62828;
+    font-size: 0.95rem;
+    background: #ffebee;
+    padding: 8px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.confirm-box button {
+    background: #138808;
+    color: #fff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.confirm-box button:hover {
+    background: #0e5e03;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(19, 136, 8, 0.3);
+}
+
+.confirm-box button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(19, 136, 8, 0.2);
+}
+
+/* ===== THANK YOU ===== */
+.thankyou {
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+/* 
+    MEDIA QUERY (Responsiveness)
+    This code runs ONLY on screens smaller than 768px (Tablets & Phones).
+*/
+@media (max-width: 768px) {
+    .vote-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .status-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

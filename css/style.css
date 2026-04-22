@@ -1,0 +1,171 @@
+/* ================= GLOBAL STYLES ================= */
+:root {
+    --primary-green: #138808;
+    --saffron: #FF9933;
+    --navy: #0A3D62;
+    --bg-light: #f4f7f6;
+    --text-main: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #ffffff;
+    color: var(--text-main);
+    padding-top: 70px;
+    line-height: 1.5;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    height: 60vh;
+    background: url("../images/voting1.jpg") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text-section {
+    padding: 40px 20px;
+}
+
+.hero-text-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--navy);
+}
+
+.hero-line {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.hero-hindi {
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* ================= SECTION STYLING ================= */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: var(--navy);
+    margin-bottom: 30px;
+}
+
+.light {
+    background-color: var(--bg-light);
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    color: #444;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* ================= CARDS ================= */
+.party-card-container,
+.points-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.party-card,
+.point {
+    width: 100%;
+    max-width: 280px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.party-card:hover,
+.point:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-green);
+}
+
+.party-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.party-card h3,
+.point h3 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+.party-card p,
+.point p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* ================= BUTTONS ================= */
+.cta-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: var(--primary-green);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.2s;
+    border: none;
+}
+
+.cta-button:hover {
+    background-color: #0f6b05;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    padding: 40px 20px;
+    background: #ffffff;
+    border-top: 2px solid #eee;
+    text-align: center;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .hero-text-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        height: 55vh;
+        /* Show center of image on mobile — where the Ashoka Chakra & finger are */
+        background-position: center center !important;
+        background-size: cover !important;
+        /* Explicitly remove any overlay — override any cached version */
+        background-image: url("../images/voting1.jpg") !important;
+    }
+}

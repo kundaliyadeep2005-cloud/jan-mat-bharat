@@ -1,0 +1,92 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+
+    /* space for fixed navbar */
+    padding-top: 70px;
+}
+
+/* ================= NAVBAR ================= */
+/* ================= NAVBAR ================= */
+.navbar-custom {
+    background: #ffffff !important;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #FF9933, #ffffff, #138808) 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand-custom {
+    font-weight: 700 !important;
+    color: #0A3D62 !important;
+}
+
+.nav-link-custom {
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    color: #444 !important;
+}
+
+.nav-link-custom:hover {
+    color: #138808 !important;
+}
+
+/* Moved active styling to inline header.php */
+
+/* ================= PORTAL BUTTONS ================= */
+.portal-action-pill {
+    background: #f8f9fa !important;
+    border: 1px solid #ddd !important;
+}
+
+.user-identity-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600 !important;
+    color: #1e293b !important;
+}
+
+.portal-btn-sm {
+    border-radius: 4px !important;
+    padding: 8px 15px !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF9933;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #138808;
+}
+
+/* ================= MOBILE NAV FIX ================= */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background: #ffffff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
+    }
+}

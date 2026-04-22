@@ -1,0 +1,145 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: linear-gradient(135deg,
+            #ff9933 0%,
+            #ffffff 50%,
+            #138808 100%);
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* WATERMARK */
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: url("../images/ashoka-chakra.png") no-repeat center;
+    background-size: contain;
+    opacity: 0.08;
+    z-index: 0;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+/* LOGIN BOX */
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.98);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+/* TITLE */
+.login-box h1 {
+    color: #138808;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+/* CHAKRA */
+.chakra {
+    width: 60px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* TAGLINE */
+.tagline {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+/* INPUTS */
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.login-box input:focus {
+    border-color: #138808;
+    outline: none;
+}
+
+/* BUTTON */
+.login-box button[type="submit"] {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    background: linear-gradient(to right, #138808, #0f6b05);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/* ERROR */
+.error {
+    color: red;
+    font-size: 13px;
+    display: block;
+    text-align: left;
+    margin-top: 3px;
+}
+
+/* SUCCESS */
+.msg {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+/* LINK */
+.link {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.link a {
+    color: #138808;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}

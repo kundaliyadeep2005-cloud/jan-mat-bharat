@@ -1,0 +1,134 @@
+/* admin_login.css */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    /* Admin specific gradient */
+    background: linear-gradient(135deg,
+            #052136 0%,
+            #0A3D62 50%,
+            #0f172a 100%);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* WATERMARK */
+body::before {
+    content: "";
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    background: url("../images/ashoka-chakra.png") no-repeat center;
+    background-size: contain;
+    opacity: 0.05;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* LOGIN BOX */
+.login-box {
+    width: 380px;
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* TITLE */
+.login-box h1 {
+    color: #0A3D62;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+/* CHAKRA */
+.chakra {
+    width: 50px;
+    margin: 15px auto;
+    display: block;
+    opacity: 0.8;
+}
+
+/* TAGLINE */
+.tagline {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* INPUTS */
+.login-box input {
+    width: 100%;
+    padding: 12px 15px;
+    /* margin-top: 14px; Bootstrap spacing is used mostly */
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+
+.login-box input:focus {
+    border-color: #0A3D62;
+    box-shadow: 0 0 0 0.25rem rgba(10, 61, 98, 0.25);
+    outline: none;
+}
+
+/* BUTTON */
+.btn-admin {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(180deg, #0A3D62 0%, #052136 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-admin:hover {
+    background: linear-gradient(180deg, #052136 0%, #031422 100%);
+    color: white;
+}
+
+/* LINK */
+.link {
+    font-size: 14px;
+}
+
+.link a {
+    color: #0A3D62;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}

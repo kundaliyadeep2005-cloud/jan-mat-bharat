@@ -1,0 +1,323 @@
+/* ===== RESULTS HERO ===== */
+.results-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+    border-bottom: 1px solid #ddd;
+}
+
+.results-hero h1 {
+    font-size: 3rem;
+    color: #0A3D62;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.results-hero p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #444;
+}
+
+/* ===== SECTIONS ===== */
+.results-section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.results-section h2 {
+    color: #0A3D62;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* ===== TOTAL VOTES CARD ===== */
+.total-votes-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #138808;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.total-votes-card h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.total-count {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #138808;
+    margin: 10px 0;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* ===== COMING SOON CARD ===== */
+.coming-soon-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 50px 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.coming-soon-card h2 {
+    color: #0A3D62;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.coming-soon-card p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.date-info {
+    color: #138808;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.vote-now-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 32px;
+    background: #138808;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.vote-now-btn:hover {
+    background: #0f6b05;
+    transform: translateY(-2px);
+}
+
+/* ===== RESULTS CONTAINER ===== */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* ===== RESULT CARD ===== */
+.result-card {
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.2s ease;
+}
+
+.result-card:hover {
+    border-color: #138808;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== PARTY INFO ===== */
+.party-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.party-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.party-info h3 {
+    color: #0A3D62;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.party-info .tag {
+    font-size: 0.85rem;
+    color: #666;
+    background: #f4f4f4;
+    padding: 4px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* ===== VOTE STATS ===== */
+.vote-stats {
+    flex: 2;
+    text-align: right;
+}
+
+.vote-count {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #f0f0f0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, #138808, #0f6b05);
+    border-radius: 6px;
+    transition: width 0.5s ease;
+}
+
+.nota-fill {
+    background: linear-gradient(to right, #FF9933, #e67e22);
+}
+
+.percentage {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #138808;
+}
+
+/* ===== NOTA CARD ===== */
+.nota-card {
+    border: 2px dashed #ccc;
+    background: #fafafa;
+}
+
+.nota-card:hover {
+    border-color: #FF9933;
+}
+
+.nota-card .percentage {
+    color: #FF9933;
+}
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+    text-align: center;
+    color: #777;
+    font-size: 0.95rem;
+    margin: 40px 20px 30px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== ANALYTICS CHARTS ===== */
+.chart-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.chart-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+/* ===== STATE TABLE ===== */
+.table-responsive {
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #f8fafc;
+    color: #64748b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table tbody td {
+    padding: 16px;
+    color: #334155;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.progress {
+    background-color: #f1f5f9;
+    border-radius: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .results-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .total-count {
+        font-size: 2.5rem;
+    }
+
+    .result-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vote-stats {
+        text-align: center;
+        width: 100%;
+    }
+
+    .party-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .chart-container {
+        height: 250px;
+    }
+}

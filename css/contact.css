@@ -1,0 +1,28 @@
+/* contact.css - Simplified to match About theme */
+
+/* Uses info-hero and info-section from about.css (already included via header or logic) */
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-details .info-card {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact-details h3 {
+    color: #0A3D62;
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #138808;
+    margin-bottom: 15px;
+}
