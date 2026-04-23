@@ -424,23 +424,6 @@ The admin panel (`/admin/`) is protected by session-based auth (`admin_auth.php`
 
 ---
 
-## 📸 Screenshots
-
-> *(Add screenshots of your project here)*
-
-You can add screenshots by placing images in your repo and referencing them:
-
-```markdown
-![Home Page](screenshots/home.png)
-![Login Page](screenshots/login.png)
-![Register with Face](screenshots/register.png)
-![Vote Page](screenshots/vote.png)
-![Results](screenshots/results.png)
-![Admin Dashboard](screenshots/admin.png)
-```
-
----
-
 ## ⚠️ Known Limitations
 
 - **Database credentials** are currently hardcoded in `db_connect.php`. For production, these must be moved to environment variables.
